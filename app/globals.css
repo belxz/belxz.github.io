@@ -1,0 +1,89 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-dm-sans:  'DM Sans', system-ui, sans-serif;
+  --font-lora:     'Lora', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── LIGHT MODE dot-grid ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(168, 216, 176, 0.16) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.3s;
+}
+
+/* ── DARK MODE dot-grid ── */
+.dark body::before {
+  background-image: radial-gradient(circle, rgba(168, 216, 176, 0.06) 1px, transparent 1px);
+}
+
+/* All content sits above the dot grid */
+main, nav, footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── DARK MODE base overrides ── */
+.dark body {
+  background-color: #100f0d;
+  color: #e8e0d5;
+}
+
+/* Smooth theme transition on all elements */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+/* Don't transition transforms/opacity (breaks animations) */
+.reveal, .reveal * {
+  transition-property: opacity, transform, background-color, border-color, color;
+}
+
+/* Scroll-reveal utility */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-d1 { transition-delay: 0.08s; }
+.reveal-d2 { transition-delay: 0.16s; }
+.reveal-d3 { transition-delay: 0.24s; }
+.reveal-d4 { transition-delay: 0.32s; }
+
+@layer components {
+  .page-container {
+    @apply max-w-5xl mx-auto px-8 md:px-16 py-20;
+  }
+  .page-header {
+    @apply mb-16;
+  }
+  .page-eyebrow {
+    @apply font-body text-xs text-muted dark:text-zinc-500 tracking-widest uppercase mb-3;
+  }
+  .page-title {
+    @apply font-display text-4xl md:text-5xl font-bold italic text-ink dark:text-zinc-100 leading-tight;
+  }
+  .page-subtitle {
+    @apply font-body text-base text-ink2 dark:text-zinc-400 mt-4 max-w-xl leading-relaxed;
+  }
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "stony-brook",
+    "school": "Stony Brook University (SUNY)",
+    "degree": "B.S. in Computer Science",
+    "dates": "Aug 2022 – Dec 2025",
+    "gpa": "3.87",
+    "honors": "Summa Cum Laude",
+    "coursework": [
+      "Software Engineering & Development Project Classes",
+      "Data Structures & Algorithms",
+      "Distributed Systems",
+      "Operating Systems",
+      "Computer Networks",
+      "Software Engineering",
+      "Web Security",
+      "Database Systems",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Linear Algebra",
+      "Discrete Mathematics",
+      "Digital Intelligence Ethics and Morals",
+      "Probability and Statistics",
+      "Theory of Computation",
+      "Physics",
+      "Technical Communications",
+      "Data Science",
+      "Multimedia Systems"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "category": "Languages",
+    "items": ["Java", "Python", "TypeScript", "JavaScript", "C", "C#", "Rust", "HTML", "CSS"]
+  },
+  {
+    "category": "Frameworks & Tools",
+    "items": ["React", "Next.js", "Node.js", "Express", "Axios", "MongoDB", "Svelte", "Vite", "Docker", "GitHub Actions", "Git", "Jira", "Ren'Py", "Tauri", "Kafka", "Azure", "Blender"]
+  },
+  {
+    "category": "Core Concepts",
+    "items": ["Algorithms & DSA", "OOP", "REST APIs", "Web Security", "CI/CD", "Agile / Scrum", "Distributed Systems", "Authentication"]
+  }
+]

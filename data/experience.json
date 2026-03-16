@@ -1,0 +1,61 @@
+[
+  {
+    "id": "national-grid",
+    "company": "National Grid",
+    "role": "Software Engineering Intern",
+    "dates": "May 2025 - August 2025",
+    "duration": "1 summer",
+    "url": "https://www.nationalgrid.com",
+    "tags": ["C#", "GitHub Actions", "Docker", "Kafka", "TypeScript"],
+    "highlights": [
+      "Built a C# email notification pipeline using Liquid templates and real-time data feeds to send dynamic outage alerts to thousands of customers, reducing manual communication overhead.",
+
+      "Delivered full stack functionality (frontend and backend features, including defect fixes, data collection pipelines, and service automation)",
+
+      "Completed 1-8 point Jira tickets through full lifecycle: design, implementation, testing, and deployment",
+
+      "Conducted pair programming and code reviews, maintaining high code quality and scalability standards across all contributions",
+
+      "Organized and facilitated weekly 60-minute engagement events for 150+ interns as a Fun Friday Committee member, boosting morale and cross-team relationships"
+    ]
+  },
+  {
+    "id": "national-grid",
+    "company": "National Grid",
+    "role": "Software Engineering Intern",
+    "dates": "June 2024 - August 2024",
+    "duration": "1 summer",
+    "url": "https://www.nationalgrid.com",
+    "tags": ["iOS", "GitHub Actions", "TypeScript", "CSS"],
+    "highlights": [
+      "Delivered production-ready full-stack features across web and iOS in cross-functional Agile teams, completing 1–5 point Jira tickets through the full lifecycle: design, implementation, testing, and deployment.",
+
+
+      "Automated CI/CD pull-request messaging with GitHub Actions and Microsoft Teams webhooks, cutting PR status update time and improving team velocity.",
+
+      "Developed an Admin Portal Dashboard to surface real-time mobile and web app service health, build versions, and logs — integrating APIs, Docker, and reverse proxies — reducing incident response time for engineering teams.",
+
+      "Conducted pair programming and code reviews, maintaining high code quality and scalability standards across all contributions.",
+
+      "Organized and facilitated weekly 60-minute engagement events for 150+ interns as a Fun Friday Committee member, boosting morale and cross-team relationships."
+    ]
+  },
+  {
+    "id": "national-grid",
+    "company": "National Grid",
+    "role": "Software Engineering Intern",
+    "dates": "June 2023 – Aug 2023",
+    "duration": "1 summer",
+    "url": "https://www.nationalgrid.com",
+    "tags": ["iOS", "GitHub Actions", "Docker", "TypeScript", "CSS"],
+    "highlights": [
+    "Built and shipped production web and iOS features in Agile cross-functional teams, delivering full-stack functionality including frontend, backend, and defect fixes",
+
+    "Completed 1–5 point Jira tickets through the full lifecycle: design, implementation, testing, and deployment",
+
+    "Performed pair programming, code reviews, and Git-based workflows to ensure high-quality and scalable code",
+
+    "Built an Admin Portal Dashboard showing real-time mobile and web app service health, build versions, and logs — integrating APIs, Docker, and reverse proxies to reduce incident response time"
+  ]
+  }
+]
