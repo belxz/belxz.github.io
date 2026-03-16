@@ -2,7 +2,7 @@
 
 Welcome to the source code for my personal portfolio site.
 
-🌐 **Live site:** [bellezheng.github.io](https://bellezheng.github.io)
+🌐 **Live site:** [belle.github.io](https://belle.github.io)
 
 ## Built with
 
