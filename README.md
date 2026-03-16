@@ -1,8 +1,8 @@
-# Belle Zheng — Portfolio
+# Portfolio
 
 Welcome to the source code for my personal portfolio site.
 
-🌐 **Live site:** [belle.github.io](https://belle.github.io)
+🌐 **Live site:** [Portfolio Website](https://belxz.github.io/)
 
 ## Built with
 
