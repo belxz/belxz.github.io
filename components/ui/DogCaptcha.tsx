@@ -162,18 +162,20 @@ export default function DogCaptcha({ children }: { children: React.ReactNode }) 
           </button>
 
           {/* Progress dots */}
-          <div className="flex gap-3">
+          <div className="flex gap-2">
             {Array.from({ length: REQUIRED_CLICKS }).map((_, i) => (
-              <div
+              <span
                 key={i}
                 className={`
-                  w-3 h-3 rounded-full border-2 transition-all duration-300
+                  text-2xl transition-all duration-300 select-none
                   ${i < clicks
-                    ? 'bg-mint border-mint scale-125'
-                    : 'bg-transparent border-border dark:border-zinc-600'
+                    ? 'opacity-100 scale-110'
+                    : 'opacity-20 grayscale'
                   }
                 `}
-              />
+              >
+                🐾
+              </span>
             ))}
           </div>
 
