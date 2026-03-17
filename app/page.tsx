@@ -34,8 +34,8 @@ export default function HomePage() {
             style={{ fontSize: 'clamp(3rem, 9vw, 6.5rem)' }}>
           Belle<br />
           <span className="italic"
-                style={{ WebkitTextStroke: '1.5px #ecd6e8', color: 'transparent' }}>
-            Zheng.
+                style={{ WebkitTextStroke: '1.5px #ecd6e8' }}>
+            Zheng
           </span>
         </h1>
 
@@ -77,7 +77,7 @@ export default function HomePage() {
                         transition-colors">
             View Experience
           </a>
-          <a href="mailto:belzheng@cs.stonybrook.edu"
+          <a href="#projects"
              className="font-body text-sm
                         text-ink2 dark:text-dark-ink2
                         border border-border dark:border-dark-border
@@ -85,7 +85,7 @@ export default function HomePage() {
                         hover:border-[#b39cd0] dark:hover:border-dark-lavender
                         hover:bg-light-lav-dim dark:hover:bg-dark-lavender-dim
                         transition-colors">
-            Say Hello
+            View Projects
           </a>
         </div>
 
