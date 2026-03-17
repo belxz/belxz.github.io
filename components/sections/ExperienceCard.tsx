@@ -25,7 +25,7 @@ export default function ExperienceCard({ job }: Props) {
                 </a>
               : job.company}
           </h3>
-          <p className="font-body text-sm text-[#b39cd0] dark:text-dark-lavender mt-1">
+          <p className="font-body text-sm text-[#6b4a9a] dark:text-dark-lavender mt-1">
             {job.role}
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function ExperienceCard({ job }: Props) {
             {job.dates}
           </span>
           <span className="font-body text-xs
-                           text-[#3a8a8c] dark:text-dark-bg
+                           text-[#2a7a7c] dark:text-dark-bg
                            bg-[#e8f8f9] dark:bg-dark-cyan
                            border border-[#a8dadc] dark:border-dark-cyan
                            px-3 py-1 rounded-full">

@@ -24,9 +24,9 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="min-h-[90vh] flex flex-col justify-center
                           max-w-5xl mx-auto px-8 md:px-16 pb-12">
-        <p className="font-body text-xs text-[#a8dadc] dark:text-dark-cyan
+        <p className="font-body text-xs text-[#3a8a8c] dark:text-dark-cyan
                       tracking-widest uppercase mb-5 opacity-0 animate-fade-up-d1">
-          Software Engineer · New York · Open to Work
+          Software Engineer · New York
         </p>
 
         <h1 className="font-display font-bold leading-[0.95] tracking-tight mb-4
@@ -34,7 +34,7 @@ export default function HomePage() {
             style={{ fontSize: 'clamp(3rem, 9vw, 6.5rem)' }}>
           Belle<br />
           <span className="italic"
-                style={{ WebkitTextStroke: '1.5px #ecd6e8' }}>
+                style={{ WebkitTextStroke: '1.5px #ecd6e8', color: 'transparent' }}>
             Zheng
           </span>
         </h1>
@@ -123,25 +123,46 @@ export default function HomePage() {
               {[
                 { icon: '🎓', key: 'Education',           val: 'B.S. Computer Science — Stony Brook University' },
                 { icon: '📍', key: 'Location',            val: 'New York, USA · Open to Relocation' },
-                { icon: '📬', key: 'Email',               val: 'belzheng@cs.stonybrook.edu' },
-                { icon: '🔗', key: 'LinkedIn',            val: 'linkedin.com/in/belle-zheng' },
+                { icon: '📬', key: 'Email',               val: 'belzheng@cs.stonybrook.edu', href: 'mailto:belzheng@cs.stonybrook.edu' },
+                { icon: '🔗', key: 'LinkedIn',            val: 'linkedin.com/in/belle-zheng', href: 'https://linkedin.com/in/belle-zheng' },
                 { icon: '🇺🇸', key: 'Work Authorization', val: 'US Citizen · No Sponsorship Required' },
-              ].map(({ icon, key, val }) => (
-                <div key={key}
-                     className="flex gap-3 items-start p-3.5
-                                bg-bg2 dark:bg-dark-bg2
-                                border border-border dark:border-dark-border rounded-xl
-                                hover:border-[#a8dadc] dark:hover:border-dark-cyan
-                                hover:bg-light-cyan-dim dark:hover:bg-dark-cyan-dim
-                                transition-colors">
-                  <span className="text-base mt-0.5 flex-shrink-0">{icon}</span>
-                  <div>
-                    <div className="font-body text-[10px] text-[#ffc1cc] dark:text-dark-pink
-                                    uppercase tracking-widest mb-0.5">{key}</div>
-                    <div className="font-body text-sm text-ink dark:text-dark-ink">{val}</div>
+              ].map(({ icon, key, val, href }) => {
+                const inner = (
+                  <>
+                    <span className="text-base mt-0.5 flex-shrink-0">{icon}</span>
+                    <div>
+                      <div className="font-body text-[10px] text-[#4a5fa0] dark:text-dark-cyan
+                                      uppercase tracking-widest mb-0.5">{key}</div>
+                      <div className="font-body text-sm text-ink dark:text-dark-ink">{val}</div>
+                    </div>
+                    {href && (
+                      <span className="ml-auto text-muted dark:text-dark-muted text-xs self-center">↗</span>
+                    )}
+                  </>
+                )
+
+                const sharedClass = `
+                  flex gap-3 items-start p-3.5
+                  bg-bg2 dark:bg-dark-bg2
+                  border border-border dark:border-dark-border rounded-xl
+                  hover:border-[#8fa3d4] dark:hover:border-dark-cyan
+                  hover:bg-[#eef2fb] dark:hover:bg-dark-cyan-dim
+                  transition-colors w-full text-left
+                `
+
+                return href ? (
+                  <a key={key} href={href}
+                     target={href.startsWith('http') ? '_blank' : undefined}
+                     rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                     className={sharedClass}>
+                    {inner}
+                  </a>
+                ) : (
+                  <div key={key} className={sharedClass}>
+                    {inner}
                   </div>
-                </div>
-              ))}
+                )
+              })}
             </div>
           </RevealWrapper>
         </div>
@@ -179,7 +200,7 @@ export default function HomePage() {
             <RevealWrapper key={group.category} delayIndex={i % 4 as 0|1|2|3}>
               <Card className="p-6 h-full">
                 <div className="flex items-center gap-2 mb-5">
-                  <span className="text-[#ffc1cc] dark:text-dark-pink font-body text-sm">
+                  <span className="text-[#c05070] dark:text-dark-pink font-body text-sm">
                     {categoryIcons[group.category] ?? '·'}
                   </span>
                   <h3 className="font-body text-sm font-medium text-ink2 dark:text-dark-ink2">
@@ -220,7 +241,7 @@ export default function HomePage() {
                     <h2 className="font-display text-2xl font-bold text-ink dark:text-dark-ink mb-1">
                       {edu.school}
                     </h2>
-                    <p className="font-body text-sm text-[#b39cd0] dark:text-dark-lavender mb-1">
+                    <p className="font-body text-sm text-[#6b4a9a] dark:text-dark-lavender mb-1">
                       {edu.degree}
                     </p>
                     <p className="font-body text-xs text-muted dark:text-dark-muted">{edu.dates}</p>
@@ -252,7 +273,7 @@ export default function HomePage() {
                       </div>
                       <div className="font-body text-xs text-muted dark:text-dark-muted mt-1">GPA</div>
                       {edu.honors && (
-                        <div className="font-serif italic text-sm text-[#b39cd0] dark:text-dark-lavender mt-1">
+                        <div className="font-serif italic text-sm text-[#6b4a9a] dark:text-dark-lavender mt-1">
                           {edu.honors}
                         </div>
                       )}

@@ -9,19 +9,24 @@ module.exports = {
     extend: {
       colors: {
         // ── Light tokens — soft pastel ──
-        bg:       '#ffffff',   // blush-tinted white
-        bg2:      '#fdf8fb',   // slightly deeper blush
-        surface:  '#ffffff',
+        bg:       '#faf8fc',   
+        bg2:      '#f5f0f9',   
+        surface:  '#fefcff',   
         border:   '#ecd6e8',   // soft pink-purple border
         border2:  '#b39cd0',   // lavender hover border
 
         // Light accents
-        'light-cyan':     '#a8dadc',   // soft teal
-        'light-pink':     '#ffc1cc',   // blush pink
-        'light-lavender': '#b39cd0',   // muted lavender
+        'light-cyan':     '#a8dadc',   // soft teal — backgrounds/borders only
+        'light-pink':     '#ffc1cc',   // blush pink — backgrounds/borders only
+        'light-lavender': '#b39cd0',   // muted lavender — backgrounds/borders only
         'light-cyan-dim': 'rgba(168,218,220,0.2)',
         'light-pink-dim': 'rgba(255,193,204,0.2)',
         'light-lav-dim':  'rgba(179,156,208,0.2)',
+
+        // Accessible text versions (darker, ≥ 4.5:1 contrast on white)
+        'text-cyan':     '#2a7a7c',   // dark teal — use for text on light bg
+        'text-blue':     '#5769da',   // periwinkle — use for text on light bg
+        'text-lavender': '#6b4a9a',   // dark purple — use for text on light bg
 
         ink:   '#3a2d3f',   // deep plum — warm dark text
         ink2:  '#6b5472',   // medium plum secondary text

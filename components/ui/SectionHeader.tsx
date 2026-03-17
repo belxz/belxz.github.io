@@ -7,7 +7,7 @@ interface SectionHeaderProps {
 export default function SectionHeader({ num, title }: SectionHeaderProps) {
   return (
     <div className="flex items-center gap-4 mb-12">
-      <span className="font-body text-xs text-[#a8dadc] dark:text-dark-cyan tracking-widest">
+      <span className="font-body text-xs text-[#3a8a8c] dark:text-dark-cyan tracking-widest">
         {num}
       </span>
       <h2 className="font-display text-3xl font-bold italic text-ink dark:text-dark-ink">
