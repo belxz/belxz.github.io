@@ -1,14 +1,14 @@
 // components/ui/Tag.tsx
-
 interface TagProps {
   label: string
-  variant?: 'default' | 'mint' | 'lavender'
+  variant?: 'default' | 'cyan' | 'lavender' | 'pink'
 }
 
 const variants = {
-  default:  'bg-bg2 dark:bg-zinc-800 border-border dark:border-zinc-700 text-ink2 dark:text-zinc-300',
-  mint:     'bg-mint-light dark:bg-green-950 border-mint dark:border-green-800 text-green-800 dark:text-green-300',
-  lavender: 'bg-purple-50 dark:bg-purple-950 border-lavender dark:border-purple-800 text-purple-800 dark:text-purple-300',
+  default:  'bg-bg2 dark:bg-dark-bg2 border-border dark:border-dark-border text-ink2 dark:text-dark-ink2',
+  cyan:     'bg-[#e8f8f9] dark:bg-dark-bg2 border-[#a8dadc] dark:border-dark-cyan text-[#3a8a8c] dark:text-dark-cyan',
+  lavender: 'bg-[#f0eaf8] dark:bg-dark-bg2 border-[#b39cd0] dark:border-dark-lavender text-[#7a5fa0] dark:text-dark-lavender',
+  pink:     'bg-[#fff0f3] dark:bg-dark-bg2 border-[#ffc1cc] dark:border-dark-pink text-[#c05070] dark:text-dark-pink',
 }
 
 export default function Tag({ label, variant = 'default' }: TagProps) {

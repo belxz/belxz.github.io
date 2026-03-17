@@ -1,6 +1,5 @@
 'use client'
 // components/ui/Nav.tsx
-
 import { useEffect, useState } from 'react'
 import ThemeToggle from './ThemeToggle'
 
@@ -13,7 +12,7 @@ const links = [
 ]
 
 export default function Nav() {
-  const [active, setActive]   = useState('')
+  const [active, setActive]     = useState('')
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -23,10 +22,7 @@ export default function Nav() {
       const ids = links.map(l => l.href.replace('#', ''))
       for (const id of [...ids].reverse()) {
         const el = document.getElementById(id)
-        if (el && window.scrollY >= el.offsetTop - 120) {
-          setActive(id)
-          break
-        }
+        if (el && window.scrollY >= el.offsetTop - 120) { setActive(id); break }
       }
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
@@ -38,31 +34,31 @@ export default function Nav() {
       fixed top-0 left-0 right-0 z-50
       flex items-center justify-between
       px-8 md:px-16 py-4
-      bg-bg/85 dark:bg-[#100f0d]/85
+      bg-bg/85 dark:bg-dark-bg/90
       backdrop-filter backdrop-blur-md
-      border-b border-border dark:border-zinc-800
+      border-b border-border dark:border-dark-border
       transition-shadow duration-300
-      ${scrolled ? 'shadow-sm dark:shadow-zinc-900' : ''}
+      ${scrolled ? 'shadow-sm dark:shadow-[0_1px_20px_rgba(0,0,0,0.3)]' : ''}
     `}>
-      <a href="#" className="font-display text-lg italic text-ink dark:text-zinc-100
-                              hover:text-green-700 dark:hover:text-mint transition-colors">
+      <a href="#"
+         className="font-display text-lg italic
+                    text-ink dark:text-dark-ink
+                    hover:text-[#b39cd0] dark:hover:text-dark-cyan
+                    transition-colors">
         Belle Zheng
       </a>
 
-      {/* Desktop links */}
       <ul className="hidden md:flex gap-8 list-none">
         {links.map(({ label, href }) => {
           const id = href.replace('#', '')
           return (
             <li key={href}>
-              <a
-                href={href}
-                className={`font-body text-sm transition-colors
-                  ${active === id
-                    ? 'text-ink dark:text-zinc-100 font-medium'
-                    : 'text-muted dark:text-zinc-500 hover:text-ink dark:hover:text-zinc-200'
-                  }`}
-              >
+              <a href={href}
+                 className={`font-body text-sm transition-colors
+                   ${active === id
+                     ? 'text-ink dark:text-dark-ink font-medium'
+                     : 'text-muted dark:text-dark-muted hover:text-ink dark:hover:text-dark-ink2'
+                   }`}>
                 {label}
               </a>
             </li>
@@ -72,54 +68,69 @@ export default function Nav() {
 
       <div className="hidden md:flex items-center gap-3">
         <ThemeToggle />
-        <a
-          href="mailto:belzheng@cs.stonybrook.edu"
-          className="font-body text-sm text-green-800 dark:text-green-300
-                     bg-mint-light dark:bg-green-950
-                     border border-mint dark:border-green-800
-                     px-4 py-1.5 rounded-full
-                     hover:bg-mint dark:hover:bg-green-900 transition-colors"
-        >
+        <a href="/resume.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="font-body text-sm
+                      text-muted dark:text-dark-muted
+                      border border-border dark:border-dark-border
+                      hover:border-[#a8dadc] dark:hover:border-dark-cyan
+                      hover:text-ink dark:hover:text-dark-ink
+                      px-4 py-1.5 rounded-full
+                      transition-colors">
+          Resume ↗
+        </a>
+        <a href="mailto:belzheng@cs.stonybrook.edu"
+           className="font-body text-sm
+                      text-white dark:text-dark-bg
+                      bg-[#b39cd0] dark:bg-dark-lavender
+                      border border-[#b39cd0] dark:border-dark-lavender
+                      px-4 py-1.5 rounded-full
+                      hover:bg-[#a08bc0] dark:hover:opacity-90
+                      transition-colors">
           Say Hello
         </a>
       </div>
 
-      {/* Mobile: toggle + hamburger */}
       <div className="md:hidden flex items-center gap-3">
         <ThemeToggle />
-        <button
-          className="text-ink2 dark:text-zinc-300 p-1"
-          onClick={() => setMenuOpen(o => !o)}
-          aria-label="Toggle menu"
-        >
+        <button className="text-ink2 dark:text-dark-ink2 p-1"
+                onClick={() => setMenuOpen(o => !o)}
+                aria-label="Toggle menu">
           <span className="block w-5 h-px bg-current mb-1.5" />
           <span className="block w-5 h-px bg-current mb-1.5" />
           <span className="block w-5 h-px bg-current" />
         </button>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="absolute top-full left-0 right-0
-                        bg-bg dark:bg-zinc-950
-                        border-b border-border dark:border-zinc-800
-                        md:hidden">
+                        bg-bg dark:bg-dark-bg
+                        border-b border-border dark:border-dark-border md:hidden">
           <ul className="flex flex-col list-none">
             {links.map(({ label, href }) => (
               <li key={href}>
-                <a
-                  href={href}
-                  onClick={() => setMenuOpen(false)}
-                  className="block font-body text-sm
-                             text-ink2 dark:text-zinc-300
-                             hover:text-ink dark:hover:text-zinc-100
-                             px-8 py-3
-                             border-b border-border dark:border-zinc-800 last:border-0"
-                >
+                <a href={href} onClick={() => setMenuOpen(false)}
+                   className="block font-body text-sm
+                              text-ink2 dark:text-dark-ink2
+                              hover:text-ink dark:hover:text-dark-ink
+                              px-8 py-3
+                              border-b border-border dark:border-dark-border last:border-0">
                   {label}
                 </a>
               </li>
             ))}
+            <li>
+              <a href="/resume.pdf"
+                 target="_blank" rel="noopener noreferrer"
+                 onClick={() => setMenuOpen(false)}
+                 className="block font-body text-sm
+                            text-[#a8dadc] dark:text-dark-cyan
+                            hover:text-ink dark:hover:text-dark-ink
+                            px-8 py-3">
+                Resume ↗
+              </a>
+            </li>
           </ul>
         </div>
       )}

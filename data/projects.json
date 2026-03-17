@@ -1,4 +1,14 @@
 [ {
+  "id": "cooking-quest",
+  "icon": "⚔️",
+  "name": "Cooking Game",
+  "dates": "March 2026 - Present",
+  "description": "A turn-based RPG where recipes are dungeons, ingredients are enemies, and kitchen utensils are your weapons. Built with React, TypeScript, and Tailwind.",
+  "tags": ["React", "TypeScript", "Tailwind", "Vite", "Game Dev"],
+  "highlight_tags": ["React", "TypeScript"],
+  "repo_url": null
+  },
+  {
   "id": "horror-escape-room-vn",
   "icon": "🎮",
   "name": "Horror Escape Room Visual Novel",
@@ -9,20 +19,20 @@
   "demo_url": null
   },  
   {
-    "id": "p2p-blockchain",
+    "id": "chiral network - p2p-blockchain",
     "icon": "⛓️",
-    "name": "P2P Blockchain File-Sharing System",
-    "dates": "Aug – Dec 2025",
+    "name": "Chiral Network - P2P Blockchain File-Sharing System",
+    "dates": "Aug 2025 – Dec 2025",
     "description": "Decentralized peer-to-peer platform in Rust and TypeScript supporting blockchain-based micropayments, encrypted file sharing, and a trust/reputation system. Implemented DHT-based peer discovery and integrated Ethereum (Geth) for on-chain mining and transaction validation. Features a Svelte GUI with a live crypto-mining dashboard.",
     "tags": ["Rust", "TypeScript", "Svelte", "Ethereum", "DHT", "Distributed Systems"],
     "highlight_tags": ["Rust", "TypeScript"],
-    "repo_url": ""
+    "repo_url": "https://github.com/belxz/chiral-network"
   },
   {
     "id": "phreddit",
     "icon": "🗨️",
     "name": "Phreddit — Reddit Clone",
-    "dates": "Aug – Dec 2024",
+    "dates": "Aug 2024 – Dec 2024",
     "description": "Full-stack Reddit-style web app on the MERN stack with full CRUD operations on posts, comments, and user profiles. Secure authentication via bcrypt and role-based access control. RESTful APIs handling all frontend-backend communication with clean separation of concerns and input validation.",
     "tags": ["React", "Node.js", "Express", "MongoDB", "bcrypt", "REST APIs"],
     "highlight_tags": ["React", "Node.js"],

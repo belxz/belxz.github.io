@@ -5,7 +5,7 @@
   },
   {
     "category": "Frameworks & Tools",
-    "items": ["React", "Next.js", "Node.js", "Express", "Axios", "MongoDB", "Svelte", "Vite", "Docker", "GitHub Actions", "Git", "Jira", "Ren'Py", "Tauri", "Kafka", "Azure", "Blender"]
+    "items": ["React", "Next.js", "Node.js", "Express", "Axios", "MongoDB", "Svelte", "Vite", "Docker", "GitHub Actions", "Git", "Jira", "Ren'Py", "Tauri", "Kafka", "Azure", "Blender", "Tailwind CSS"]
   },
   {
     "category": "Core Concepts",

@@ -1,5 +1,5 @@
-// components/ui/Typewriter.tsx
 'use client'
+// components/ui/Typewriter.tsx
 import { useEffect, useState } from 'react'
 
 const phrases = [
@@ -10,10 +10,10 @@ const phrases = [
 ]
 
 export default function Typewriter() {
-  const [display, setDisplay] = useState('')
+  const [display, setDisplay]     = useState('')
   const [phraseIdx, setPhraseIdx] = useState(0)
-  const [charIdx, setCharIdx] = useState(0)
-  const [deleting, setDeleting] = useState(false)
+  const [charIdx, setCharIdx]     = useState(0)
+  const [deleting, setDeleting]   = useState(false)
 
   useEffect(() => {
     const phrase = phrases[phraseIdx]
@@ -40,9 +40,10 @@ export default function Typewriter() {
   }, [charIdx, deleting, phraseIdx])
 
   return (
-    <span className="font-serif italic text-green-700">
+    // Light: lavender  |  Dark: soft cyan
+    <span className="font-serif italic text-[#b39cd0] dark:text-dark-cyan">
       {display}
-      <span className="animate-blink">|</span>
+      <span className="animate-blink text-[#ffc1cc] dark:text-dark-pink">|</span>
     </span>
   )
 }

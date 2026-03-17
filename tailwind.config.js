@@ -8,20 +8,42 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg:           '#faf8f5',
-        bg2:          '#f4f0eb',
-        surface:      '#ffffff',
-        border:       '#e8e0d8',
-        border2:      '#d4c8be',
-        mint:         '#a8d8b0',
-        'mint-light': '#dff2e3',
-        lavender:     '#c4b5e8',
-        blush:        '#f0b8c4',
-        peach:        '#f5c9a0',
-        sky:          '#a8d0e8',
-        ink:          '#2d2820',
-        ink2:         '#5a5048',
-        muted:        '#9a8e84',
+        // ── Light tokens — soft pastel ──
+        bg:       '#ffffff',   // blush-tinted white
+        bg2:      '#fdf8fb',   // slightly deeper blush
+        surface:  '#ffffff',
+        border:   '#ecd6e8',   // soft pink-purple border
+        border2:  '#b39cd0',   // lavender hover border
+
+        // Light accents
+        'light-cyan':     '#a8dadc',   // soft teal
+        'light-pink':     '#ffc1cc',   // blush pink
+        'light-lavender': '#b39cd0',   // muted lavender
+        'light-cyan-dim': 'rgba(168,218,220,0.2)',
+        'light-pink-dim': 'rgba(255,193,204,0.2)',
+        'light-lav-dim':  'rgba(179,156,208,0.2)',
+
+        ink:   '#3a2d3f',   // deep plum — warm dark text
+        ink2:  '#6b5472',   // medium plum secondary text
+        muted: '#a88cb0',   // muted mauve
+
+        // ── Dark tokens — muted pastel ──
+        dark: {
+          bg:       '#2c2c2c',
+          bg2:      '#353535',
+          surface:  '#3d3d3d',
+          border:   '#4a4a4a',
+          border2:  '#b39cd0',
+          ink:      '#e4e4e4',
+          ink2:     '#c8c8c8',
+          muted:    '#909090',
+          cyan:     '#a8dadc',
+          'cyan-dim':     'rgba(168,218,220,0.15)',
+          pink:     '#ffc1cc',
+          'pink-dim':     'rgba(255,193,204,0.15)',
+          lavender: '#b39cd0',
+          'lavender-dim': 'rgba(179,156,208,0.18)',
+        },
       },
       fontFamily: {
         display: ['var(--font-playfair)', 'Georgia', 'serif'],
