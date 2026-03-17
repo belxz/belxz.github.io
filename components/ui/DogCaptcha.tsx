@@ -70,7 +70,7 @@ export default function DogCaptcha({ children }: { children: React.ReactNode }) 
   const progress  = (clicks / REQUIRED_CLICKS) * 100
 
   const statusText = () => {
-    if (clicks === 0) return 'Click the dog to continue'
+    if (clicks === 0) return 'Pet the good boi to continue'
     if (clicks === 1) return '2 more times...'
     if (clicks === 2) return 'One more!'
     return "You're in! 🐾"
