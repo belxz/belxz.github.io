@@ -26,7 +26,7 @@ export default function HomePage() {
                           max-w-5xl mx-auto px-8 md:px-16 pb-12">
         <p className="font-body text-xs text-[#a8dadc] dark:text-dark-cyan
                       tracking-widest uppercase mb-5 opacity-0 animate-fade-up-d1">
-          Software Engineer · New York
+          Software Engineer · New York · Open to Work
         </p>
 
         <h1 className="font-display font-bold leading-[0.95] tracking-tight mb-4
