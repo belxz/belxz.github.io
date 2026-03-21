@@ -1,6 +1,4 @@
 // types/index.ts
-// Single source of truth for all data shapes used across the portfolio.
-// When you add a new field to a JSON file, add it here first.
 
 export interface Experience {
   id: string
@@ -9,9 +7,7 @@ export interface Experience {
   dates: string
   duration: string
   highlights: string[]
-  /** Optional: link to company website */
   url?: string
-  /** Optional: tech tags shown on the card */
   tags?: string[]
 }
 
@@ -23,10 +19,10 @@ export interface Project {
   description: string
   tags: string[]
   highlight_tags: string[]
-  /** Optional: live demo URL */
   demo_url?: string
-  /** Optional: GitHub repo URL */
   repo_url?: string
+  screenshots?: string[]
+  long_description?: string
 }
 
 export interface SkillGroup {
@@ -42,9 +38,4 @@ export interface Education {
   gpa?: string
   honors?: string
   coursework?: string[]
-}
-
-export interface NavLink {
-  label: string
-  href: string
 }

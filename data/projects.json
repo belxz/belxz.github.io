@@ -16,8 +16,21 @@
   "description": "A narrative-driven horror escape room game built in Ren'Py with branching storyline, puzzle mechanics, and an interactive inventory system. Features a combination lock keypad, collectible puzzle pieces, countdown timer, point-and-click hotspot system, and a secret unlockable room. Developed collaboratively using Git with branch protection and a modular file structure.",
   "tags": ["Ren'Py", "Python", "Git", "Game Dev", "UI Design"],
   "highlight_tags": ["Ren'Py", "Python"],
-  "demo_url": null
-  },  
+  "demo_url": null,
+  "screenshots": [
+      "/projects/horror-escape-room-vn/screenshot0001.png",
+      "/projects/horror-escape-room-vn/screenshot0002.png",
+      "/projects/horror-escape-room-vn/screenshot0003.png",
+      "/projects/horror-escape-room-vn/screenshot0004.png",
+      "/projects/horror-escape-room-vn/screenshot0005.png",
+      "/projects/horror-escape-room-vn/screenshot0006.png",
+      "/projects/horror-escape-room-vn/screenshot0007.png",
+      "/projects/horror-escape-room-vn/screenshot0008.png",
+      "/projects/horror-escape-room-vn/screenshot0009.png",
+      "/projects/horror-escape-room-vn/screenshot0010.png",
+      "/projects/horror-escape-room-vn/screenshot0011.png"
+    ]
+  },
   {
     "id": "chiral network - p2p-blockchain",
     "icon": "⛓️",
