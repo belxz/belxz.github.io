@@ -1,7 +1,6 @@
 'use client'
-// components/ui/Nav.tsx — left sidebar navigation
-
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 import ThemeToggle from './ThemeToggle'
 
 const links = [
@@ -15,6 +14,8 @@ const links = [
 export default function Nav() {
   const [active, setActive]     = useState('')
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isProjectPage = pathname.startsWith('/projects/')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,12 +32,11 @@ export default function Nav() {
   return (
     <>
       {/* ── DESKTOP SIDEBAR ── */}
-      <aside className="hidden md:flex flex-col fixed left-0 top-0 h-screen w-56
-                        bg-bg/90 dark:bg-dark-bg/90
-                        backdrop-blur-md
-                        border-r border-border dark:border-dark-border
-                        px-6 py-10 z-50
-                        justify-between">
+      <aside className={`${isProjectPage ? 'hidden' : 'hidden md:flex'} flex-col fixed left-0 top-0 h-screen w-56
+                   backdrop-blur-md
+                   border-r border-border dark:border-dark-border
+                   px-6 py-10 z-50
+                   justify-between`}>
 
         {/* Top: logo + links */}
         <div className="flex flex-col gap-10">
@@ -108,12 +108,7 @@ export default function Nav() {
       </aside>
 
       {/* ── MOBILE TOP BAR ── */}
-      <nav className="md:hidden fixed top-0 left-0 right-0 z-50
-                      flex items-center justify-between
-                      px-5 py-4
-                      bg-bg/90 dark:bg-dark-bg/90
-                      backdrop-blur-md
-                      border-b border-border dark:border-dark-border">
+      <nav className={`${isProjectPage ? 'hidden' : 'md:hidden'} fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 py-4 bg-bg/90 dark:bg-dark-bg/90 backdrop-blur-md border-b border-border dark:border-dark-border`}>
         <a href="#"
            className="font-display text-lg italic text-ink dark:text-dark-ink
                       hover:text-[#b39cd0] dark:hover:text-dark-cyan transition-colors">

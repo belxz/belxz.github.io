@@ -6,6 +6,7 @@ import Nav from '@/components/ui/Nav'
 import Footer from '@/components/ui/Footer'
 import DogCaptcha from '@/components/ui/DogCaptcha'
 import './globals.css'
+import ContentWrapper from '@/components/ui/ContentWrapper'
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap' })
 const dmSans   = DM_Sans({          subsets: ['latin'], variable: '--font-dm-sans',  display: 'swap' })
@@ -28,16 +29,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <DogCaptcha>
             <Nav />
-            {/*
-              md:pl-56 offsets content by sidebar width (w-56 = 224px)
-              pt-16 handles mobile top bar on small screens
-            */}
-            <div className="md:pl-56">
-              <main className="pt-16 md:pt-0">
-                {children}
-              </main>
-              <Footer />
-            </div>
+              <ContentWrapper>
+              {children}
+            </ContentWrapper>
+            <Footer />
           </DogCaptcha>
         </ThemeProvider>
       </body>

@@ -30,7 +30,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
   const hasScreenshots = project.screenshots && project.screenshots.length > 0
 
   return (
-    <div className="max-w-4xl mx-auto px-8 md:px-16 py-16">
+    <div className="no-sidebar max-w-4xl mx-auto px-8 md:px-16 py-16">
 
       {/* Back link */}
       <RevealWrapper>
