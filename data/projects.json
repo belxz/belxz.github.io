@@ -1,4 +1,30 @@
 [ {
+  "id": "shared-calendar",
+  "icon": "📅",
+  "name": "Shared Group Calendar",
+  "dates": "March 2026 - Present",
+  "description": "A collaborative calendar app for groups to import existing calendars, find shared free days, and plan day itineraries together.",
+  "long_description": "A full-stack collaborative calendar application built with a two-person team. Users can import existing calendars via .ics files from Google Calendar, Apple Calendar, or Outlook, create groups, invite members, and automatically find days where everyone is free. Includes a day planning feature where groups can build itineraries for their shared free days.",
+  "tags": [
+    "Java",
+    "Spring Boot",
+    "PostgreSQL",
+    "React",
+    "TypeScript",
+    "REST API",
+    "JWT Auth",
+    "Docker"
+  ],
+  "highlight_tags": [
+    "Spring Boot",
+    "React",
+    "TypeScript"
+  ],
+  "demo_url": null,
+  "repo_url": null,
+  "screenshots": [] 
+},
+  {
   "id": "cooking-quest",
   "icon": "⚔️",
   "name": "Cooking Game",
