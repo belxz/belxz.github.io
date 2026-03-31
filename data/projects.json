@@ -1,49 +1,55 @@
-[ {
-  "id": "shared-calendar",
-  "icon": "📅",
-  "name": "Shared Group Calendar",
-  "dates": "March 2026 - Present",
-  "description": "A collaborative calendar app for groups to import existing calendars, find shared free days, and plan day itineraries together.",
-  "long_description": "A full-stack collaborative calendar application built with a two-person team. Users can import existing calendars via .ics files from Google Calendar, Apple Calendar, or Outlook, create groups, invite members, and automatically find days where everyone is free. Includes a day planning feature where groups can build itineraries for their shared free days.",
-  "tags": [
-    "Java",
-    "Spring Boot",
-    "PostgreSQL",
-    "React",
-    "TypeScript",
-    "REST API",
-    "JWT Auth",
-    "Docker"
-  ],
-  "highlight_tags": [
-    "Spring Boot",
-    "React",
-    "TypeScript"
-  ],
-  "demo_url": null,
-  "repo_url": null,
-  "screenshots": [] 
-},
+[
   {
-  "id": "cooking-quest",
-  "icon": "⚔️",
-  "name": "Cooking Game",
-  "dates": "March 2026 - Present",
-  "description": "A turn-based RPG where recipes are dungeons, ingredients are enemies, and kitchen utensils are your weapons. Built with React, TypeScript, and Tailwind.",
-  "tags": ["React", "TypeScript", "Tailwind", "Vite", "Game Dev"],
-  "highlight_tags": ["React", "TypeScript"],
-  "repo_url": null
+    "id": "shared-calendar",
+    "icon": "📅",
+    "name": "Shared Group Calendar",
+    "dates": "March 2026 - Present",
+    "description": "A collaborative calendar app for groups to import existing calendars, find shared free days, and plan day itineraries together.",
+    "long_description": "A full-stack collaborative calendar application built with a two-person team. Users can import existing calendars via .ics files from Google Calendar, Apple Calendar, or Outlook, create groups, invite members, and automatically find days where everyone is free. Includes a day planning feature where groups can build itineraries for their shared free days.",
+    "tags": [
+      "Java",
+      "SpringBoot",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "REST API",
+      "JWT Auth",
+      "Docker",
+      "Swagger",
+      "Client-Server Architecture",
+      "RESTful API"
+    ],
+    "highlight_tags": [
+      "Spring Boot",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "RESTful API"
+    ],
+    "demo_url": null,
+    "repo_url": null,
+    "screenshots": []
   },
   {
-  "id": "horror-escape-room-vn",
-  "icon": "🎮",
-  "name": "Horror Escape Room Visual Novel",
-  "dates": "March 2026",
-  "description": "A narrative-driven horror escape room game built in Ren'Py with branching storyline, puzzle mechanics, and an interactive inventory system. Features a combination lock keypad, collectible puzzle pieces, countdown timer, point-and-click hotspot system, and a secret unlockable room. Developed collaboratively using Git with branch protection and a modular file structure.",
-  "tags": ["Ren'Py", "Python", "Git", "Game Dev", "UI Design"],
-  "highlight_tags": ["Ren'Py", "Python"],
-  "demo_url": null,
-  "screenshots": [
+    "id": "cooking-quest",
+    "icon": "⚔️",
+    "name": "Cooking Game",
+    "dates": "March 2026 - Present",
+    "description": "A turn-based RPG where recipes are dungeons, ingredients are enemies, and kitchen utensils are your weapons. Built with React, TypeScript, and Tailwind.",
+    "tags": ["React", "TypeScript", "Tailwind", "Vite", "Game Dev"],
+    "highlight_tags": ["React", "TypeScript"],
+    "repo_url": null
+  },
+  {
+    "id": "horror-escape-room-vn",
+    "icon": "🎮",
+    "name": "Horror Escape Room Visual Novel",
+    "dates": "March 2026",
+    "description": "A narrative-driven horror escape room game built in Ren'Py with branching storyline, puzzle mechanics, and an interactive inventory system. Features a combination lock keypad, collectible puzzle pieces, countdown timer, point-and-click hotspot system, and a secret unlockable room. Developed collaboratively using Git with branch protection and a modular file structure.",
+    "tags": ["Ren'Py", "Python", "Git", "Game Dev", "UI Design"],
+    "highlight_tags": ["Ren'Py", "Python"],
+    "demo_url": null,
+    "screenshots": [
       "/projects/horror-escape-room-vn/screenshot0001.png",
       "/projects/horror-escape-room-vn/screenshot0002.png",
       "/projects/horror-escape-room-vn/screenshot0003.png",
@@ -63,7 +69,14 @@
     "name": "Chiral Network - P2P Blockchain File-Sharing System",
     "dates": "Aug 2025 – Dec 2025",
     "description": "Decentralized peer-to-peer platform in Rust and TypeScript supporting blockchain-based micropayments, encrypted file sharing, and a trust/reputation system. Implemented DHT-based peer discovery and integrated Ethereum (Geth) for on-chain mining and transaction validation. Features a Svelte GUI with a live crypto-mining dashboard.",
-    "tags": ["Rust", "TypeScript", "Svelte", "Ethereum", "DHT", "Distributed Systems"],
+    "tags": [
+      "Rust",
+      "TypeScript",
+      "Svelte",
+      "Ethereum",
+      "DHT",
+      "Distributed Systems"
+    ],
     "highlight_tags": ["Rust", "TypeScript"],
     "repo_url": "https://github.com/belxz/chiral-network"
   },
