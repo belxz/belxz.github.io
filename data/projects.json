@@ -3,7 +3,7 @@
     "id": "shared-calendar",
     "icon": "📅",
     "name": "Shared Group Calendar",
-    "dates": "March 2026 - Present",
+    "dates": "March 2026 - April 2026",
     "description": "A collaborative calendar app for groups to import existing calendars, find shared free days, and plan day itineraries together.",
     "long_description": "A full-stack collaborative calendar application built with a two-person team. Users can import existing calendars via .ics files from Google Calendar, Apple Calendar, or Outlook, create groups, invite members, and automatically find days where everyone is free. Includes a day planning feature where groups can build itineraries for their shared free days.",
     "tags": [
@@ -17,18 +17,32 @@
       "Docker",
       "Swagger",
       "Client-Server Architecture",
-      "RESTful API"
+      "RESTful API",
+      "AI"
     ],
     "highlight_tags": [
+      "Java",
       "Spring Boot",
       "React",
       "TypeScript",
       "PostgreSQL",
-      "RESTful API"
+      "RESTful API",
+      "AI"
     ],
     "demo_url": null,
     "repo_url": null,
-    "screenshots": []
+    "screenshots": [
+      "/projects/shared-calendar/screenshot0001.png",
+      "/projects/shared-calendar/screenshot0002.png",
+      "/projects/shared-calendar/screenshot0003.png",
+      "/projects/shared-calendar/screenshot0004.png",
+      "/projects/shared-calendar/screenshot0005.png",
+      "/projects/shared-calendar/screenshot0006.png",
+      "/projects/shared-calendar/screenshot0007.png",
+      "/projects/shared-calendar/screenshot0008.png",
+      "/projects/shared-calendar/screenshot0009.png",
+      "/projects/shared-calendar/screenshot0010.png"
+    ]
   },
   {
     "id": "cooking-quest",
