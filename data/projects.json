@@ -52,7 +52,14 @@
     "description": "A turn-based RPG where recipes are dungeons, ingredients are enemies, and kitchen utensils are your weapons. Built with React, TypeScript, and Tailwind.",
     "tags": ["React", "TypeScript", "Tailwind", "Vite", "Game Dev"],
     "highlight_tags": ["React", "TypeScript"],
-    "repo_url": null
+    "repo_url": null,
+    "screenshots": [
+      "/projects/cooking-quest/screenshot0001.png",
+      "/projects/cooking-quest/screenshot0002.png",
+      "/projects/cooking-quest/screenshot0003.png",
+      "/projects/cooking-quest/screenshot0004.png",
+      "/projects/cooking-quest/screenshot0005.png"
+    ]
   },
   {
     "id": "horror-escape-room-vn",
