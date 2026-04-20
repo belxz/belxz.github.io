@@ -48,7 +48,7 @@
     "id": "cooking-quest",
     "icon": "⚔️",
     "name": "Cooking Game",
-    "dates": "March 2026 - Present",
+    "dates": "March 2026 - April 2026",
     "description": "A turn-based RPG where recipes are dungeons, ingredients are enemies, and kitchen utensils are your weapons. Built with React, TypeScript, and Tailwind.",
     "tags": ["React", "TypeScript", "Tailwind", "Vite", "Game Dev"],
     "highlight_tags": ["React", "TypeScript"],
