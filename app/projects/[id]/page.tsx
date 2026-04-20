@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 import { getProjects, getProjectById } from "@/lib/data";
 import Tag from "@/components/ui/Tag";
 import RevealWrapper from "@/components/ui/RevealWrapper";
+import ProjectScreenshots from "@/components/ProjectScreenshots";
 
 // Required for Next.js static export — tells it which [id] pages to build
 export function generateStaticParams() {
@@ -140,32 +141,14 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
       {hasScreenshots && (
         <RevealWrapper>
           <div>
-            <h2 className="font-display text-xl font-bold italic text-ink dark:text-dark-ink mb-6">
+            <h2 className="font-display text-xl font-bold italic mb-6">
               Screenshots
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              {project.screenshots!.map((src, i) => (
-                <RevealWrapper key={src} delayIndex={(i % 4) as 0 | 1 | 2 | 3}>
-                  <div
-                    className="relative rounded-2xl overflow-hidden
-                                  border border-border dark:border-dark-border
-                                  bg-bg2 dark:bg-dark-bg2
-                                  shadow-sm dark:shadow-none
-                                  hover:-translate-y-1 hover:shadow-md
-                                  dark:hover:shadow-[0_6px_24px_rgba(0,0,0,0.35)]
-                                  transition-all duration-250
-                                  aspect-video"
-                  >
-                    <Image
-                      src={src}
-                      alt={`${project.name} screenshot ${i + 1}`}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </RevealWrapper>
-              ))}
-            </div>
+
+            <ProjectScreenshots
+              screenshots={project.screenshots!}
+              projectName={project.name}
+            />
           </div>
         </RevealWrapper>
       )}
